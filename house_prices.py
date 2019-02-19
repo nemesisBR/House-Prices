@@ -98,7 +98,7 @@ test = test[:, 1:]
 
 #final = sc_Y.inverse_transform(model.predict(test))
 final = model.predict(test)
-final = pd.Series(final)
+final = pd.Series(final[:,0])
 
 Id = pd.Series([x for x in range(1461,2920)])
 
